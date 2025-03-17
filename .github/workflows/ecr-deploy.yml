@@ -43,6 +43,6 @@ jobs:
       uses: Deep-Consulting-Solutions/ecr-deploy-action@main
       with:
         service-key: 'nocodb' 
-        account: ${{ secrets.DCS_AWS_ACCOUNT }}
+        account: "861276122638"
         source-image: ${{ github.ref_name }}
         tag: ${{ github.ref_name }}
