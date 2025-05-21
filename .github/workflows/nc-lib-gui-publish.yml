@@ -1,7 +1,10 @@
 name: Node.js Package
 
 on: push
-
+permissions:
+  contents: read
+  packages: write  # Allows publishing packages
+  
 jobs:
   publish-gpr:
     if: github.event.ref == 'refs/heads/nc-lib-gui'
